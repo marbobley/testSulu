@@ -19,7 +19,7 @@
 <body>
     <header>
         {% block header %}
-            <nav>
+            <nav class="navbar">
                 <ul>
                     <li>
                         <a href="{{ sulu_content_root_path() }}">Homepage</a>
@@ -52,5 +52,6 @@
     </footer>
 
     {% block javascripts %}{% endblock %}
+            {% block importmap %}{{ importmap('app') }}{% endblock %}
 </body>
 </html>
